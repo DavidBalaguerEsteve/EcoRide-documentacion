@@ -1,0 +1,49 @@
+site_name: EcoRide · Documentación
+site_description: Guía funcional y técnica de la aplicación de bicicletas compartidas EcoRide
+site_author: Equipo EcoRide
+
+repo_name: EcoRide
+
+theme:
+  name: material
+  language: es
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+  - Instalación: instalacio.md
+  - Funcionalidades: funcionalitats.md
+  - Arquitectura: arquitectura.md
+  - API: api.md
+  - Preguntas frecuentes: faq.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
